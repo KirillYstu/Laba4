@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Задание №9</title>
+    </head>
+    <body>
+        <script>
+
+            var x1 = prompt("Начало диапазона: ", "")
+            var x2 = prompt("Конец диапазона: ", "")
+            var a = prompt("Шаг: ", "")
+            var x
+            var y
+            
+            for(x=x1; x<=x2; x++) {
+                y= Math.pow(x,2) + Math.pow(x,3) - 3*x
+                alert("X = " + x + " Y = " + y)
+            }
+
+        </script>
+    </body>
+</html>
