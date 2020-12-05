@@ -7,15 +7,19 @@
     <body>
         <script>
 
-        var i
-        var sum = 0
-        var a
-        for(i=1; i<6; i++) {
-            a = Math.floor( Math.random(a)*(10-1))+1
-            sum = sum + Math.pow(a,2)
-            alert(a)
+        var i, a;
+        var sum = 0;
+        let arr = [];
+
+        for (i=1; i<6; i++) {
+            arr[i] = (Math.floor( Math.random(a)*(10-1))+1);
+            alert("Рандомное число: "+ arr[i]);
         }
-        alert("Сумма квадратов - " + sum)
+
+        for (i=1; i<6; i++) {
+            sum = sum + arr[i];
+        }
+        alert("Сумма квадратов: " + sum);
 
         </script>
     </body>
