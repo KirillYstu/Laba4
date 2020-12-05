@@ -2,13 +2,27 @@
 <html>
     <head>
         <meta charset="URF-8">
-        <title>Задание №18</title>
+        <title>Задание №8</title>
     </head>
     <body>
         <script>
-            var a = prompt("Введите число", "")
-            var x = Math.sqrt(a)
-            alert ("Корень числа - " + x)
+            var a = prompt("Введите значение a ", "");
+            var b = prompt("Введите значение b ", "");
+            var c = prompt("Введите значение c ", "");
+        
+            var D = Number(b)*Number(b) - 4*Number(a)*Number(c);
+            if (D<0) alert ("Корней нет");
+            if (D==0) {
+                var x = ((-1)*Number(b))/(2*Number(a));
+                alert ("Корень уравнения: " + x);
+            }
+            if (D>0) {
+                var x1 = ((-1)*Number(b)+Math.sqrt(D))/(2*Number(a));
+                var x2 = ((-1)*Number(b)-Math.sqrt(D))/(2*Number(a));
+                alert ("Первый корень: " + x1);
+                alert ("Второй корень: " + x2);
+            }
+
         </script>
     </body>
 </html>
